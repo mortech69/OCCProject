@@ -1,0 +1,132 @@
+﻿<%@ Master Language="VB" CodeFile="OCCProject.master.vb" Inherits="OCCProject" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<script runat="server">
+</script>
+<head id="Head1" runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width maximum-scale=1.0 minimum-scale=1.0 initial-scale=1.0 user-scalable=no" />
+  
+    <link href="https://www.oaklandcc.edu/_resources/css/icon-font.min.css" rel="stylesheet" />
+    <link href="https://www.oaklandcc.edu/_resources/css/app.css" rel="stylesheet" />
+    <link href="https://www.oaklandcc.edu/_resources/css/osfonts.css" rel="stylesheet" type="text/css" />
+    <link href="https://www.oaklandcc.edu/_resources/css/customdotnet.css" rel="stylesheet" type="text/css" />
+
+    <link href="Content/occ.css" rel="stylesheet" type="text/css"/>
+  
+    <%-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>--%>
+    <script src="Scripts/jquery-3.4.1.js"></script>
+  
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</head>
+<body>
+            <!-- =====================================HEADER================================================ -->
+            <header role="banner" style="height: 120px">
+                <div class="row">
+                    <div class="large-12 columns">
+                        <div class="logo">
+                            <a href="https://www.oaklandcc.edu/_resources/img/occ_logo--ver.png'" title="Home" tabindex="1">Oakland Community College</a>
+                        </div>
+                        <div class="quick-links small-6 medium-6 large-4 show-for-medium-up" style="text-align: right;">
+                     		<div style="display: inline-block;">
+					            <%--<a href="#" style="color: #ffffff; padding-right: 10px;">A-Z Index</a>--%>
+				            </div>
+                     		<div id="search" style="display: inline-block; width: 70%;">
+                        		<form id="search_form" class="zoom_searchform" action="/zs/search.aspx" method="get">
+					            </form>
+                     		</div>
+                  	    </div> 
+                            <div class="mega-menu show-for-medium-up" id="navbar">
+                            <%--  <div class="row">
+                        <div class="mega-menu__wrapper">
+                        <nav role="navigation" class="nav nav--main">
+                           <ul class="left" style="float: right !important">
+                              <li class="dsdropdown"><a href="#" aria-controls="main-menu-1" aria-expanded="false" class="menu__parent"><span>Academics</span></a><div data-dropdown-content="data-dropdown-content" id="main-menu-1" aria-hidden="true" tabindex="-1" class="f-dropdown content">
+                                    <div class="row">
+                                       <div class="medium-12 large-9 columns">
+                                          <div class="menu__label">In Academics section</div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li class="dsdropdown"><a href="#" aria-controls="main-menu-2" aria-expanded="false" class="menu__parent"><span>Admissions</span></a><div data-dropdown-content="data-dropdown-content" id="main-menu-2" aria-hidden="true" tabindex="-1" class="f-dropdown content">
+                                    <div class="row">
+                                       <div class="medium-12 large-9 columns">
+                                          <div class="menu__label">In Admissions section</div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li class="dsdropdown"><a href="#" aria-controls="main-menu-3" aria-expanded="false" class="menu__parent"><span>Cost &amp; Aid</span></a><div data-dropdown-content="data-dropdown-content" id="main-menu-3" aria-hidden="true" tabindex="-1" class="f-dropdown content">
+                                    <div class="row">
+                                       <div class="medium-12 large-9 columns">
+                                          <div class="menu__label">In Cost &amp; Aid section</div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li class="dsdropdown"><a href="#" aria-controls="main-menu-4" aria-expanded="false" class="menu__parent"><span>Current Students</span></a><div data-dropdown-content="data-dropdown-content" id="main-menu-4" aria-hidden="true" tabindex="-1" class="f-dropdown content">
+                                    <div class="row">
+                                       <div class="medium-12 large-9 columns">
+                                          <div class="menu__label">In Current Students section</div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li class="dsdropdown"><a href="#" aria-controls="main-menu-5" aria-expanded="false" class="menu__parent"><span>About Us</span></a><div data-dropdown-content="data-dropdown-content" id="main-menu-5" aria-hidden="true" tabindex="-1" class="f-dropdown content">
+                                    <div class="row">
+                                       <div class="medium-12 large-9 columns">
+                                          <div class="menu__label">In About Us section</div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                           </ul>
+                        </nav>
+                        </div>
+                     </div>--%>
+                            </div>
+                        </div>
+                    </div>
+               
+            </header>
+            <!-- =====================================MAIN================================================ -->
+            <form id="form1" runat="server">
+            <main id="maincontent" role="main" class="main">
+                <!-- =========================================FullWidth========================================= -->
+                <article class="module--default">
+                    <div class="row">
+                        <div class="small-12 large-12 columns">
+                            <asp:ContentPlaceHolder ID="WebFormContent" runat="server" />
+                        </div>
+                    </div>
+                </article>
+            </main>
+            </form>
+            <!-- =========================================FOOTER============================================ -->
+            <footer role="contentinfo">
+                <div class="module--footer-copyright">
+                    <div class="row">
+                        <div class="small-12 large-12 columns">
+                            <small><span style="text-transform: none;">OCC is committed to empowering our students
+                                to succeed and advancing our community. </span>
+                                <br />
+                                <span id="directedit">©</span> 2019 Oakland Community College / 2480 Opdyke Road,
+                                Bloomfield Hills, MI 48304, 248.341.2000 </small>
+                            <ul class="block__link-list block__link-list--inline">
+                                <li><a href="/about/privacy.aspx">Privacy Statement</a></li>
+                                <li><a href="/about/mission-strategic-priorities-vision.aspx">Mission, Values &amp;
+                                    Vision</a></li>
+                                <li><a href="/about/accreditation/default.aspx">Accreditations</a></li>
+                                <li><a title="Email Webmaster" href="mailto:webmaster@oaklandcc.edu">Webmaster</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+</body>
+</html>
+

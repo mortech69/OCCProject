@@ -1,0 +1,88 @@
+﻿#maincontent
+{
+    min-height:360px;
+}
+h3.subformheader
+{
+    color: #fff;
+    background-color: #046A38;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-weight: 600;
+    margin-left: 0;
+}
+.rowmargin10, form .row .row .rowmargin10, form .row .rowmargin10
+{
+    margin-bottom: 10px;
+}
+.rowmargin20, form .row .row .rowmargin20, form .row .rowmargin20
+{
+    margin-bottom: 20px;
+}
+.rowmargin30, form .row .row .rowmargin30, form .row .rowmargin30
+{
+    margin-bottom: 30px;
+}
+.required, .red
+{
+    color: #cc0000;
+}
+.alert-box
+{
+    font-size: 1rem;
+}
+.bold
+{
+    font-weight: bold;
+}
+.alert-box.warning a
+{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+
+.alert-box.warning a:hover, .alert-box.warning a:focus
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+table tr th
+{
+    padding: 0.35rem 0.75rem;
+    font-size: .95rem;
+    color: #222222;
+    text-align: left;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 650px)
+{
+    .small-left
+    {
+        text-align: left !important;
+    }
+    h3
+    {
+        font-size: 1.1rem;
+    }
+    h3.subformheader
+    {
+        letter-spacing: .06em;
+    }
+    .personal-info
+    {
+        font-size: 1.05rem;
+    }
+}
+
+@media only screen and (min-width:40.06em) and (max-width:69.05em)
+{
+    fieldset table tr td
+    {
+        padding: 0.46em 0.2rem;
+    }
+}
