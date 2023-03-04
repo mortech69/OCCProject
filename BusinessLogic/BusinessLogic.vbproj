@@ -64,6 +64,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ErrorLogger.vb" />
     <Compile Include="StudentContactInfo.vb" />
     <Compile Include="StudentRequestProcessor.vb" />
     <Compile Include="Validator.vb" />

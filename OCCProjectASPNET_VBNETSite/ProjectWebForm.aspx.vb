@@ -45,7 +45,7 @@ Partial Class ProjectWebForm
             studentContactInfo.Email = EmailTextBox.Text
 
             'Uncomment out below if want to see Error Alert
-            'studentContactInfo = Nothing
+            studentContactInfo = Nothing
 
             'This method is unit tested (Run All Tests in Visual Studios Test)
             validated = validateStudentInfo.ValidateStudentInfo(studentContactInfo)
@@ -57,10 +57,12 @@ Partial Class ProjectWebForm
 
             If validated = False Then
                 Error_Message.Visible = True
+                Dim errorLogger = New ErrorLogger(Me)
             End If
 
         Else
             Error_Message.Visible = True
+            Dim errorLogger = New ErrorLogger(Me)
         End If
     End Sub
 
