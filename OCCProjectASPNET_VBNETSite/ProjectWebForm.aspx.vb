@@ -45,7 +45,7 @@ Partial Class ProjectWebForm
             studentContactInfo.Email = EmailTextBox.Text
 
             'Uncomment out below if want to see Error Alert
-            studentContactInfo = Nothing
+            'studentContactInfo = Nothing
 
             'This method is unit tested (Run All Tests in Visual Studios Test)
             validated = validateStudentInfo.ValidateStudentInfo(studentContactInfo)
